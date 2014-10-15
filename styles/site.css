@@ -172,8 +172,14 @@ a { //suppressing the -webkit-tap-highlight-color
   margin: 0 auto;
   width: 645px;
 }
+/* line 105, ../scss/partials/_primary.scss */
+.main-logo iframe {
+  margin: 0 auto;
+  height: 300px;
+  width: 645px;
+}
 
-/* line 108, ../scss/partials/_primary.scss */
+/* line 114, ../scss/partials/_primary.scss */
 h1.head-title {
   font-size: 4em;
 }
@@ -181,13 +187,13 @@ h1.head-title {
 /*
  * Custom button
  */
-/* line 116, ../scss/partials/_primary.scss */
+/* line 122, ../scss/partials/_primary.scss */
 .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
 
-/* line 123, ../scss/partials/_primary.scss */
+/* line 129, ../scss/partials/_primary.scss */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
