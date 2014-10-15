@@ -91,6 +91,20 @@
  * Page
  */
 
+.main-logo {
+    background-image: url(../images/starter-riot-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    img {
+        margin: 0 auto;
+        width: 645px;
+    }
+}
+
+
+
 h1.head-title {
     font-size: 4em;   
 }

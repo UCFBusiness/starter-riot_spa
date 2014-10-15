@@ -161,6 +161,19 @@ a { //suppressing the -webkit-tap-highlight-color
  * Page
  */
 /* line 94, ../scss/partials/_primary.scss */
+.main-logo {
+  background-image: url(../images/starter-riot-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* line 100, ../scss/partials/_primary.scss */
+.main-logo img {
+  margin: 0 auto;
+  width: 645px;
+}
+
+/* line 108, ../scss/partials/_primary.scss */
 h1.head-title {
   font-size: 4em;
 }
@@ -168,13 +181,13 @@ h1.head-title {
 /*
  * Custom button
  */
-/* line 102, ../scss/partials/_primary.scss */
+/* line 116, ../scss/partials/_primary.scss */
 .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
 
-/* line 109, ../scss/partials/_primary.scss */
+/* line 123, ../scss/partials/_primary.scss */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
