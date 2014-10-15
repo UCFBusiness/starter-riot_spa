@@ -1,0 +1,92 @@
+// All Viewports //
+
+/*
+background: rgba(255,255,255,.3); //- white
+*/
+
+.fp-section {
+    
+    margin: 0;
+    padding: 0;
+    color: #fff;
+
+    &:nth-child(2n+1) { // odd number sections
+        //background: rgba(255, 255, 255, 0.2);
+        //color: #555; /* IE8 proofing */
+        //color: rgba(51,51,51,.5);
+    }
+
+    &:nth-child(2n) { // even number sections
+        //background: rgba(0, 0, 0, 0.2);
+        //color: #fff; /* IE8 proofing */
+        //color: rgba(255,255,255,.75);
+    }
+
+    &:nth-child(1) { // first section
+        //background-image: url(/images/bg-lg1.jpg);
+        //background-repeat: no-repeat;
+        //background-size: cover;
+    }
+
+    .sectionsNav {
+        padding: .1em;
+        font-family: 'arial', sans-serif;
+        position: absolute;
+        bottom: 8%;
+        left: 48%;
+        z-index: 100;
+
+        // Tablet
+        @media (max-width: 999px){
+            bottom: 3%;
+            left: 47%;
+        }
+
+        // Mobile-Landscape
+        @media (max-width: 699px) and (orientation: landscape){
+            bottom: 3%;
+            left: 46%;
+        }
+
+        // Mobile-Portrait
+        @media (max-width: 499px) and (orientation: portrait){
+            bottom: 3%;
+            left: 43%;
+        }
+
+        &.go {
+            text-align: center;
+            text-decoration: none;
+            //color: #ddd;
+
+            &:before {
+                display: block;
+                font-size: 0.7em;
+            } 
+        }
+
+        &#goNext {
+            &:before {
+                @extend .go:before;
+                content:"Learn More";
+            } 
+        }
+
+        &#goTop {
+            &:before {
+                @extend .go:before;
+                content:"Top";
+            } 
+        }
+
+        .fa-chevron-down {
+            font-size: 2.8em;   
+        }
+    }
+}
+
+.fullPage-header {
+    position: absolute;
+    top: 0;
+    left: 3%;
+}
