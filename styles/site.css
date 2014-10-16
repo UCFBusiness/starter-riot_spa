@@ -40,10 +40,10 @@ body h1, body h2, body h3, body h4, body h5 {
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 1em;
-  color: #cc9900;
+  color: #ffcc00;
 }
 
-/* line 56, ../scss/partials/_global.scss */
+/* line 60, ../scss/partials/_global.scss */
 h1.head-title {
   font-size: 4em;
 }
@@ -137,6 +137,7 @@ a { //suppressing the -webkit-tap-highlight-color
 
 /* line 68, ../scss/partials/_primary.scss */
 .section-wrapper {
+  padding-top: 50px;
   display: table;
   width: 100%;
   height: 100%;
@@ -144,13 +145,13 @@ a { //suppressing the -webkit-tap-highlight-color
   min-height: 100%;
 }
 
-/* line 74, ../scss/partials/_primary.scss */
+/* line 75, ../scss/partials/_primary.scss */
 .site-wrapper-inner, .section-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  /* line 74, ../scss/partials/_primary.scss */
+  /* line 75, ../scss/partials/_primary.scss */
   .site-wrapper-inner, .section-wrapper-inner {
     vertical-align: middle;
     /* Start the vertical centering */
@@ -158,7 +159,7 @@ a { //suppressing the -webkit-tap-highlight-color
 }
 
 /* Padding for spacing */
-/* line 85, ../scss/partials/_primary.scss */
+/* line 86, ../scss/partials/_primary.scss */
 .inner {
   padding: 1em 30px;
 }
@@ -166,31 +167,31 @@ a { //suppressing the -webkit-tap-highlight-color
 /*
  * Page
  */
-/* line 94, ../scss/partials/_primary.scss */
+/* line 95, ../scss/partials/_primary.scss */
 .main-logo {
   background-image: url(../images/starter-riot-logo.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
 }
-/* line 100, ../scss/partials/_primary.scss */
+/* line 101, ../scss/partials/_primary.scss */
 .main-logo img {
   margin: 0 auto;
   width: 645px;
 }
-/* line 107, ../scss/partials/_primary.scss */
+/* line 108, ../scss/partials/_primary.scss */
 .main-logo iframe {
   margin: 0 auto;
   height: 300px;
   width: 645px;
 }
 
-/* line 116, ../scss/partials/_primary.scss */
+/* line 117, ../scss/partials/_primary.scss */
 .yt-video img {
   margin: 0 auto;
   width: 645px;
 }
-/* line 121, ../scss/partials/_primary.scss */
+/* line 122, ../scss/partials/_primary.scss */
 .yt-video iframe {
   margin: 0 auto;
   height: 300px;
@@ -200,26 +201,26 @@ a { //suppressing the -webkit-tap-highlight-color
 /*
  * Custom button
  */
-/* line 133, ../scss/partials/_primary.scss */
+/* line 134, ../scss/partials/_primary.scss */
 .btn-center {
   margin: 0 auto;
   width: 92px;
 }
 
-/* line 138, ../scss/partials/_primary.scss */
+/* line 139, ../scss/partials/_primary.scss */
 .btn-center-lg {
   margin: 0 auto;
   width: 119px;
 }
 
-/* line 143, ../scss/partials/_primary.scss */
+/* line 144, ../scss/partials/_primary.scss */
 .btn-ghost {
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
   color: #fff;
 }
-/* line 149, ../scss/partials/_primary.scss */
+/* line 150, ../scss/partials/_primary.scss */
 .btn-ghost:hover {
   border: 1px solid #333;
 }
@@ -659,13 +660,13 @@ Fullpage JS
 /*
 background: rgba(255,255,255,.3); //- white
 */
-/* line 7, ../scss/modules/fullpage/_section.scss */
+/* line 8, ../scss/modules/fullpage/_section.scss */
 .fp-section {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 31, ../scss/modules/fullpage/_section.scss */
+/* line 32, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav {
   padding: .1em;
   font-family: 'arial', sans-serif;
@@ -675,50 +676,50 @@ background: rgba(255,255,255,.3); //- white
   z-index: 100;
 }
 @media (max-width: 999px) {
-  /* line 31, ../scss/modules/fullpage/_section.scss */
+  /* line 32, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
     bottom: 3%;
     left: 47%;
   }
 }
 @media (max-width: 699px) and (orientation: landscape) {
-  /* line 31, ../scss/modules/fullpage/_section.scss */
+  /* line 32, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
     bottom: 3%;
     left: 46%;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 31, ../scss/modules/fullpage/_section.scss */
+  /* line 32, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
     bottom: 3%;
     left: 43%;
   }
 }
-/* line 57, ../scss/modules/fullpage/_section.scss */
+/* line 58, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav.go {
   text-align: center;
   text-decoration: none;
 }
-/* line 62, ../scss/modules/fullpage/_section.scss */
+/* line 63, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav.go:before, .fp-section .sectionsNav#goNext:before, .fp-section .sectionsNav#goTop:before {
   display: block;
   font-size: 0.7em;
 }
-/* line 69, ../scss/modules/fullpage/_section.scss */
+/* line 70, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav#goNext:before {
   content: "Learn More";
 }
-/* line 76, ../scss/modules/fullpage/_section.scss */
+/* line 77, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav#goTop:before {
   content: "Top";
 }
-/* line 82, ../scss/modules/fullpage/_section.scss */
+/* line 83, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav .fa-chevron-down {
   font-size: 2.8em;
 }
 
-/* line 88, ../scss/modules/fullpage/_section.scss */
+/* line 89, ../scss/modules/fullpage/_section.scss */
 .fullPage-header {
   position: absolute;
   top: 0;
