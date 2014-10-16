@@ -1,0 +1,44 @@
+/*
+ * Video Players
+ */
+
+.yt-player {
+    
+    img {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    iframe {
+        margin: 0 auto;
+        height: 300px;
+        width: 645px;
+    }
+}
+
+
+.main-player {
+    @extend .yt-player;
+    
+    
+    
+    img {
+        background-image: url(../images/SR_logo.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+    }
+    
+    
+}
+
+.bl-player {
+    @extend .yt-player;
+    
+    img {
+        background-image: url(../images/BL_logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}

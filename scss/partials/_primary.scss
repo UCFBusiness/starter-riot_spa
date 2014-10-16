@@ -89,45 +89,6 @@
 
 
 /*
- * Page
- */
-
-.main-logo {
-    background-image: url(../images/starter-riot-logo.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    
-    img {
-        margin: 0 auto;
-        width: 645px;
-        
-        //border: 1px dashed red;
-    }
-    
-    iframe {
-        margin: 0 auto;
-        height: 300px;
-        width: 645px;
-    }
-}
-
-.yt-video {
-    
-    img {
-        margin: 0 auto;
-        width: 645px;
-    }
-    
-    iframe {
-        margin: 0 auto;
-        height: 300px;
-        width: 645px;
-    }
-}
-
-
-/*
  * Custom button
  */
 
@@ -150,4 +111,15 @@
     &:hover {
         border: 1px solid #333;
     }
+}
+
+
+/*
+ * Pages
+ */
+
+.clearbox {
+    border: 1px solid #555;
+    background: rgba(0,0,0,.6); //- white
+    border-radius: 5px;
 }

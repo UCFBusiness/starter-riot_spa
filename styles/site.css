@@ -165,64 +165,40 @@ a { //suppressing the -webkit-tap-highlight-color
 }
 
 /*
- * Page
- */
-/* line 95, ../scss/partials/_primary.scss */
-.main-logo {
-  background-image: url(../images/starter-riot-logo.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-}
-/* line 101, ../scss/partials/_primary.scss */
-.main-logo img {
-  margin: 0 auto;
-  width: 645px;
-}
-/* line 108, ../scss/partials/_primary.scss */
-.main-logo iframe {
-  margin: 0 auto;
-  height: 300px;
-  width: 645px;
-}
-
-/* line 117, ../scss/partials/_primary.scss */
-.yt-video img {
-  margin: 0 auto;
-  width: 645px;
-}
-/* line 122, ../scss/partials/_primary.scss */
-.yt-video iframe {
-  margin: 0 auto;
-  height: 300px;
-  width: 645px;
-}
-
-/*
  * Custom button
  */
-/* line 134, ../scss/partials/_primary.scss */
+/* line 95, ../scss/partials/_primary.scss */
 .btn-center {
   margin: 0 auto;
   width: 92px;
 }
 
-/* line 139, ../scss/partials/_primary.scss */
+/* line 100, ../scss/partials/_primary.scss */
 .btn-center-lg {
   margin: 0 auto;
   width: 119px;
 }
 
-/* line 144, ../scss/partials/_primary.scss */
+/* line 105, ../scss/partials/_primary.scss */
 .btn-ghost {
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
   color: #fff;
 }
-/* line 150, ../scss/partials/_primary.scss */
+/* line 111, ../scss/partials/_primary.scss */
 .btn-ghost:hover {
   border: 1px solid #333;
+}
+
+/*
+ * Pages
+ */
+/* line 121, ../scss/partials/_primary.scss */
+.clearbox {
+  border: 1px solid #555;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
 }
 
 /*
@@ -294,6 +270,37 @@ ul.navbar-nav > li.active > a:hover, ul.navbar-nav > li.active > a:focus {
   .profile {
     max-width: 150px;
   }
+}
+
+/*
+ * Video Players
+ */
+/* line 7, ../scss/partials/_video-players.scss */
+.yt-player img, .main-player img, .bl-player img {
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 12, ../scss/partials/_video-players.scss */
+.yt-player iframe, .main-player iframe, .bl-player iframe {
+  margin: 0 auto;
+  height: 300px;
+  width: 645px;
+}
+
+/* line 25, ../scss/partials/_video-players.scss */
+.main-player img {
+  background-image: url(../images/SR_logo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+/* line 38, ../scss/partials/_video-players.scss */
+.bl-player img {
+  background-image: url(../images/BL_logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /* line 3, ../scss/partials/_socialbuttons.scss */
