@@ -185,29 +185,41 @@ a { //suppressing the -webkit-tap-highlight-color
   width: 645px;
 }
 
+/* line 116, ../scss/partials/_primary.scss */
+.yt-video img {
+  margin: 0 auto;
+  width: 645px;
+}
+/* line 121, ../scss/partials/_primary.scss */
+.yt-video iframe {
+  margin: 0 auto;
+  height: 300px;
+  width: 645px;
+}
+
 /*
  * Custom button
  */
-/* line 119, ../scss/partials/_primary.scss */
+/* line 133, ../scss/partials/_primary.scss */
 .btn-center {
   margin: 0 auto;
   width: 92px;
 }
 
-/* line 124, ../scss/partials/_primary.scss */
+/* line 138, ../scss/partials/_primary.scss */
 .btn-center-lg {
   margin: 0 auto;
   width: 119px;
 }
 
-/* line 129, ../scss/partials/_primary.scss */
+/* line 143, ../scss/partials/_primary.scss */
 .btn-ghost {
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
   color: #fff;
 }
-/* line 135, ../scss/partials/_primary.scss */
+/* line 149, ../scss/partials/_primary.scss */
 .btn-ghost:hover {
   border: 1px solid #333;
 }
