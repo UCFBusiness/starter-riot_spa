@@ -50,19 +50,20 @@
     max-width: 300px;
 }
 
+
 /*
  * Base structure
  */
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-    background: rgba(0,0,0,0.6) url(../images/title.png);
+    background: rgba(0,0,0,0.5) url(../images/title.png);
     display: table;
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-            box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.6);
+            box-shadow: inset 0 0 100px rgba(0,0,0,.6);
 }
 .section-wrapper {
     display: table;
@@ -86,7 +87,6 @@
 }
 
 
-
 /*
  * Page
  */
@@ -94,12 +94,14 @@
 .main-logo {
     background-image: url(../images/starter-riot-logo.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: contain;
     
     img {
         margin: 0 auto;
         width: 645px;
+        
+        //border: 1px dashed red;
     }
     
     iframe {
@@ -110,25 +112,26 @@
 }
 
 
-
-h1.head-title {
-    font-size: 4em;   
-}
-
 /*
  * Custom button
  */
 
-.btn-lg {
-    padding: 10px 20px;
-    font-weight: bold;
+.btn-center {
+    margin: 0 auto;
+    width: 92px;
 }
 
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-    color: #777;
-    text-shadow: none; /* Prevent inheritence from `body` */
-    background-color: rgba(255,255,255,0.3);
-    border: 1px solid #777;
+.btn-center-lg {
+    margin: 0 auto;
+    width: 119px;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    
+    &:hover {
+        border: 1px solid #333;
+    }
 }

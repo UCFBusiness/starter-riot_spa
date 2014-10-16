@@ -29,6 +29,7 @@ html, body {
 body {
   background-image: url(../images/riot-bg.jpg);
   font-family: 'Architects Daughter', sans-serif;
+  color: #fff;
   /*Avoid flicker on slides transitions for mobile phones #336 */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   /* Headers*/
@@ -40,6 +41,11 @@ body h1, body h2, body h3, body h4, body h5 {
   font-weight: 400;
   line-height: 1em;
   color: #cc9900;
+}
+
+/* line 56, ../scss/partials/_global.scss */
+h1.head-title {
+  font-size: 4em;
 }
 
 /* Links 
@@ -117,19 +123,19 @@ a { //suppressing the -webkit-tap-highlight-color
  * Base structure
  */
 /* Extra markup and styles for table-esque vertical and horizontal centering */
-/* line 58, ../scss/partials/_primary.scss */
+/* line 59, ../scss/partials/_primary.scss */
 .site-wrapper {
-  background: rgba(0, 0, 0, 0.6) url(../images/title.png);
+  background: rgba(0, 0, 0, 0.5) url(../images/title.png);
   display: table;
   width: 100%;
   height: 100%;
   /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
 }
 
-/* line 67, ../scss/partials/_primary.scss */
+/* line 68, ../scss/partials/_primary.scss */
 .section-wrapper {
   display: table;
   width: 100%;
@@ -138,13 +144,13 @@ a { //suppressing the -webkit-tap-highlight-color
   min-height: 100%;
 }
 
-/* line 73, ../scss/partials/_primary.scss */
+/* line 74, ../scss/partials/_primary.scss */
 .site-wrapper-inner, .section-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  /* line 73, ../scss/partials/_primary.scss */
+  /* line 74, ../scss/partials/_primary.scss */
   .site-wrapper-inner, .section-wrapper-inner {
     vertical-align: middle;
     /* Start the vertical centering */
@@ -152,7 +158,7 @@ a { //suppressing the -webkit-tap-highlight-color
 }
 
 /* Padding for spacing */
-/* line 84, ../scss/partials/_primary.scss */
+/* line 85, ../scss/partials/_primary.scss */
 .inner {
   padding: 1em 30px;
 }
@@ -164,7 +170,7 @@ a { //suppressing the -webkit-tap-highlight-color
 .main-logo {
   background-image: url(../images/starter-riot-logo.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: contain;
 }
 /* line 100, ../scss/partials/_primary.scss */
@@ -172,36 +178,37 @@ a { //suppressing the -webkit-tap-highlight-color
   margin: 0 auto;
   width: 645px;
 }
-/* line 105, ../scss/partials/_primary.scss */
+/* line 107, ../scss/partials/_primary.scss */
 .main-logo iframe {
   margin: 0 auto;
   height: 300px;
   width: 645px;
 }
 
-/* line 114, ../scss/partials/_primary.scss */
-h1.head-title {
-  font-size: 4em;
-}
-
 /*
  * Custom button
  */
-/* line 122, ../scss/partials/_primary.scss */
-.btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+/* line 119, ../scss/partials/_primary.scss */
+.btn-center {
+  margin: 0 auto;
+  width: 92px;
+}
+
+/* line 124, ../scss/partials/_primary.scss */
+.btn-center-lg {
+  margin: 0 auto;
+  width: 119px;
 }
 
 /* line 129, ../scss/partials/_primary.scss */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #777;
-  text-shadow: none;
-  /* Prevent inheritence from `body` */
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid #777;
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* line 134, ../scss/partials/_primary.scss */
+.btn-ghost:hover {
+  border: 1px solid #333;
 }
 
 /*

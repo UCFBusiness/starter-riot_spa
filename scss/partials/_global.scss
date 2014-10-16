@@ -36,9 +36,9 @@ html {
 body {
     @extend html;
     
-    //padding-top: 50px;
     background-image: url(../images/riot-bg.jpg);
     font-family: 'Architects Daughter', sans-serif;
+    color: #fff;
     
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -51,6 +51,10 @@ body {
         line-height: 1em;
         color: #cc9900;
     }
+}
+
+h1.head-title {
+    font-size: 4em;   
 }
 
 
