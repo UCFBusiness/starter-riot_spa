@@ -5,54 +5,67 @@
 
 .navbar {
     background-color: transparent;
-    background: rgba(255, 255, 255, 0.96);
+    background-color: rgba(255, 255, 255, 0.93);
     box-shadow: 0 2px 12px rgba(150, 150, 150, 0.23);
 }
 
 
-ul.navbar-nav {
-    background-color: transparent;
-    //background: rgba(255, 255, 255, 0.93);
-    //border: 1px dashed red; //<-- development
-    //background: rgba(201,201,201,0.4);
+.navbar-nav {
     
-    > li {
-        //background-color: #fff;
+    // Mobile
+    @media screen and (max-width: 767px){
         
-        @media (min-width: 768px) {
+        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.93);
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        //border: 1px dashed red; //<-- development
+        //background: rgba(201,201,201,1);
+        
+        &> li {
             background-color: transparent;
+            
+            &> a {
+                
+                background-color: #eee;
+                border-bottom: 2px solid transparent;
+                
+                &:hover, &:focus {
+                    background-color: transparent;
+                    //border-bottom-color: rgba(255, 204, 0, .99);
+                }
+            }
         }
         
-        > a {
-            //background-color: #eee;
-            border-bottom: 2px solid transparent;
+        &> li.active {
+            //background-color: #ffcc00;
             
-            @media (min-width: 768px) {
-                //background-color: transparent;
-            }
-            
-            &:hover, &:focus {
-                //background-color: transparent;
-                border-bottom-color: rgba(255,255,255,.25);
+            &> a {
                 
-                @media (min-width: 768px) {
-                    color: red;
-                    border-bottom-color: rgba(255, 204, 0, .99);
+                border-bottom: 2px solid #ffcc00;
+                
+                &:hover, &:focus {
+                    border-bottom-color: rgba(255,255,255,.25);
                 }
             }
         }
     }
     
-    > li.active {
-        //background-color: #ffcc00;
-        
-        > a {
-            //background-color: #eee;
-            border-bottom: 2px solid #ffcc00;
+    @media (min-width: 768px) {
+        &> li {
+            background-color: transparent;
             
-            &:hover, &:focus {
-                //background-color: transparent;
-                border-bottom-color: rgba(255, 204, 0, .99);
+            &> a {
+                
+                background-color: #eee;
+                border-bottom: 2px solid transparent;
+                
+                &:hover, &:focus {
+                    border-bottom-color: rgba(255,255,255,.25);
+                    border-bottom-color: rgba(255, 204, 0, .99);
+                    color: white;
+                }
             }
         }
     }

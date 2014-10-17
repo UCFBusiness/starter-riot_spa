@@ -186,42 +186,56 @@ a { //suppressing the -webkit-tap-highlight-color
 /* line 6, ../scss/partials/_nav.scss */
 .navbar {
   background-color: transparent;
-  background: rgba(255, 255, 255, 0.96);
+  background-color: rgba(255, 255, 255, 0.93);
   box-shadow: 0 2px 12px rgba(150, 150, 150, 0.23);
 }
 
-/* line 13, ../scss/partials/_nav.scss */
-ul.navbar-nav {
-  background-color: transparent;
-}
-@media (min-width: 768px) {
-  /* line 19, ../scss/partials/_nav.scss */
-  ul.navbar-nav > li {
+@media screen and (max-width: 767px) {
+  /* line 13, ../scss/partials/_nav.scss */
+  .navbar-nav {
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.93);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* line 26, ../scss/partials/_nav.scss */
+  .navbar-nav > li {
     background-color: transparent;
   }
-}
-/* line 26, ../scss/partials/_nav.scss */
-ul.navbar-nav > li > a {
-  border-bottom: 2px solid transparent;
-}
-/* line 34, ../scss/partials/_nav.scss */
-ul.navbar-nav > li > a:hover, ul.navbar-nav > li > a:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
-}
-@media (min-width: 768px) {
+  /* line 29, ../scss/partials/_nav.scss */
+  .navbar-nav > li > a {
+    background-color: #eee;
+    border-bottom: 2px solid transparent;
+  }
   /* line 34, ../scss/partials/_nav.scss */
-  ul.navbar-nav > li > a:hover, ul.navbar-nav > li > a:focus {
-    color: red;
-    border-bottom-color: rgba(255, 204, 0, 0.99);
+  .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: transparent;
+  }
+  /* line 44, ../scss/partials/_nav.scss */
+  .navbar-nav > li.active > a {
+    border-bottom: 2px solid #ffcc00;
+  }
+  /* line 48, ../scss/partials/_nav.scss */
+  .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
   }
 }
-/* line 49, ../scss/partials/_nav.scss */
-ul.navbar-nav > li.active > a {
-  border-bottom: 2px solid #ffcc00;
-}
-/* line 53, ../scss/partials/_nav.scss */
-ul.navbar-nav > li.active > a:hover, ul.navbar-nav > li.active > a:focus {
-  border-bottom-color: rgba(255, 204, 0, 0.99);
+@media (min-width: 768px) {
+  /* line 56, ../scss/partials/_nav.scss */
+  .navbar-nav > li {
+    background-color: transparent;
+  }
+  /* line 59, ../scss/partials/_nav.scss */
+  .navbar-nav > li > a {
+    background-color: #eee;
+    border-bottom: 2px solid transparent;
+  }
+  /* line 64, ../scss/partials/_nav.scss */
+  .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+    border-bottom-color: rgba(255, 204, 0, 0.99);
+    color: white;
+  }
 }
 
 /*
