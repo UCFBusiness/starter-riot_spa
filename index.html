@@ -154,17 +154,23 @@
     <!-- BEGIN: Scripts -->
     <script type="text/javascript">
         $('.nav a').on('click', function () {
-			ga('send', 'event', 'nav', 'section', $(this).text())
-		});
-		$('#lnkRegister').on('click', function () {
-			ga('send', 'event', 'link', 'register', 'www.facebook.com/events/971454652872064');
-		});
-		$('#lnkBlackstone').on('click', function () {
-			ga('send', 'event', 'link', 'external', 'ucf.thelaunchpad.org')
-		});
-		$('#lnkStarters').on('click', function () {
-			ga('send', 'event', 'link', 'external', 'ucfstarters.org')
-		});
+            ga('send', 'event', 'Nav', 'Section', $(this).text())
+        });
+        $('#playerA').on('click', function () {
+            ga('send', 'event', 'Video', 'View', 'Starter Riot')
+        });
+        $('#playerB').on('click', function () {
+            ga('send', 'event', 'Video', 'View', 'Blackstone Launchpad')
+        });
+        $('#lnkRegister').on('click', function () {
+            ga('send', 'event', 'Link', 'Register', 'Facebook Event');
+        });
+        $('#lnkBlackstone').on('click', function () {
+            ga('send', 'event', 'Link', 'External', 'ucf.thelaunchpad.org')
+        });
+        $('#lnkStarters').on('click', function () {
+            ga('send', 'event', 'Link', 'External', 'ucfstarters.org')
+        });
 	</script>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
