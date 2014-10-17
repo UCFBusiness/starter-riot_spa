@@ -20,23 +20,19 @@
 .main-player {
     @extend .yt-player;
     
-    
-    
     img {
         background-image: url(../images/SR_logo.png);
         background-repeat: no-repeat;
         background-position: top center;
         background-size: contain;
     }
-    
-    
 }
 
 .bl-player {
     @extend .yt-player;
     
     img {
-        background-image: url(../images/BL_logo.png);
+        background-image: url(../images/BL_logo.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

@@ -36,7 +36,9 @@ html {
 body {
     @extend html;
     
-    background-image: url(../images/riot-bg.jpg);
+    background: rgba(0,0,0,0.1) url(../images/riot-bg.jpg);
+    background-attachment: fixed;
+    
     font-family: 'Architects Daughter', sans-serif;
     color: #fff;
     

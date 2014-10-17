@@ -22,14 +22,15 @@ html, body {
 
 /* line 36, ../scss/partials/_global.scss */
 body {
-  background-image: url(../images/riot-bg.jpg);
+  background: rgba(0, 0, 0, 0.1) url(../images/riot-bg.jpg);
+  background-attachment: fixed;
   font-family: 'Architects Daughter', sans-serif;
   color: #fff;
   /*Avoid flicker on slides transitions for mobile phones #336 */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   /* Headers*/
 }
-/* line 47, ../scss/partials/_global.scss */
+/* line 49, ../scss/partials/_global.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'Rock Salt', sans-serif;
   letter-spacing: 1px;
@@ -38,7 +39,7 @@ body h1, body h2, body h3, body h4, body h5 {
   color: #ffcc00;
 }
 
-/* line 60, ../scss/partials/_global.scss */
+/* line 62, ../scss/partials/_global.scss */
 h1.head-title {
   font-size: 4em;
 }
@@ -121,6 +122,7 @@ a { //suppressing the -webkit-tap-highlight-color
 /* line 59, ../scss/partials/_primary.scss */
 .site-wrapper {
   background: rgba(0, 0, 0, 0.5) url(../images/title.png);
+  background-attachment: fixed;
   display: table;
   width: 100%;
   height: 100%;
@@ -130,23 +132,24 @@ a { //suppressing the -webkit-tap-highlight-color
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
 }
 
-/* line 68, ../scss/partials/_primary.scss */
+/* line 70, ../scss/partials/_primary.scss */
 .section-wrapper {
   padding-top: 50px;
+  /* keeps content from falling behind navbar */
   display: table;
   width: 100%;
   height: 100%;
-  /* For at least Firefox */
+  /* for at least Firefox */
   min-height: 100%;
 }
 
-/* line 75, ../scss/partials/_primary.scss */
+/* line 77, ../scss/partials/_primary.scss */
 .site-wrapper-inner, .section-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  /* line 75, ../scss/partials/_primary.scss */
+  /* line 77, ../scss/partials/_primary.scss */
   .site-wrapper-inner, .section-wrapper-inner {
     vertical-align: middle;
     /* Start the vertical centering */
@@ -154,7 +157,7 @@ a { //suppressing the -webkit-tap-highlight-color
 }
 
 /* Padding for spacing */
-/* line 86, ../scss/partials/_primary.scss */
+/* line 88, ../scss/partials/_primary.scss */
 .inner {
   padding: 1em 30px;
 }
@@ -162,26 +165,14 @@ a { //suppressing the -webkit-tap-highlight-color
 /*
  * Custom button
  */
-/* line 95, ../scss/partials/_primary.scss */
-.btn-center {
-  margin: 0 auto;
-  width: 92px;
-}
-
-/* line 100, ../scss/partials/_primary.scss */
-.btn-center-lg {
-  margin: 0 auto;
-  width: 119px;
-}
-
-/* line 105, ../scss/partials/_primary.scss */
+/* line 97, ../scss/partials/_primary.scss */
 .btn-ghost {
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
   color: #fff;
 }
-/* line 111, ../scss/partials/_primary.scss */
+/* line 103, ../scss/partials/_primary.scss */
 .btn-ghost:hover {
   border: 1px solid #333;
 }
@@ -189,13 +180,6 @@ a { //suppressing the -webkit-tap-highlight-color
 /*
  * Pages
  */
-/* line 121, ../scss/partials/_primary.scss */
-.clearbox {
-  border: 1px solid #555;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-}
-
 /*
  * NavBar
  */
@@ -282,7 +266,7 @@ ul.navbar-nav > li.active > a:hover, ul.navbar-nav > li.active > a:focus {
   width: 645px;
 }
 
-/* line 25, ../scss/partials/_video-players.scss */
+/* line 23, ../scss/partials/_video-players.scss */
 .main-player img {
   background-image: url(../images/SR_logo.png);
   background-repeat: no-repeat;
@@ -290,9 +274,9 @@ ul.navbar-nav > li.active > a:hover, ul.navbar-nav > li.active > a:focus {
   background-size: contain;
 }
 
-/* line 38, ../scss/partials/_video-players.scss */
+/* line 34, ../scss/partials/_video-players.scss */
 .bl-player img {
-  background-image: url(../images/BL_logo.png);
+  background-image: url(../images/BL_logo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
