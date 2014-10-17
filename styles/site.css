@@ -232,8 +232,7 @@ a { //suppressing the -webkit-tap-highlight-color
   }
   /* line 64, ../scss/partials/_nav.scss */
   .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
-    border-bottom-color: rgba(255, 255, 255, 0.25);
-    border-bottom-color: rgba(255, 204, 0, 0.99);
+    border-bottom-color: #ffcc00;
     color: white;
   }
 }

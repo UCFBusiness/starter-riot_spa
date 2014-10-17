@@ -62,8 +62,8 @@
                 border-bottom: 2px solid transparent;
                 
                 &:hover, &:focus {
-                    border-bottom-color: rgba(255,255,255,.25);
-                    border-bottom-color: rgba(255, 204, 0, .99);
+                    //border-bottom-color: rgba(255,255,255,.25);
+                    border-bottom-color: rgba(255, 204, 0, 1);
                     color: white;
                 }
             }
