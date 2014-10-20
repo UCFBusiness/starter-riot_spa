@@ -670,55 +670,52 @@ background: rgba(255,255,255,.3); //- white
   padding: .1em;
   font-family: 'arial', sans-serif;
   position: absolute;
-  bottom: 8%;
+  bottom: 3%;
   left: 48%;
   z-index: 100;
 }
 @media (max-width: 999px) {
   /* line 32, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
-    bottom: 3%;
     left: 47%;
   }
 }
 @media (max-width: 699px) and (orientation: landscape) {
   /* line 32, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
-    bottom: 3%;
     left: 46%;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
   /* line 32, ../scss/modules/fullpage/_section.scss */
   .fp-section .sectionsNav {
-    bottom: 3%;
     left: 43%;
   }
 }
-/* line 58, ../scss/modules/fullpage/_section.scss */
+/* line 55, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav.go {
   text-align: center;
   text-decoration: none;
 }
-/* line 63, ../scss/modules/fullpage/_section.scss */
+/* line 60, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav.go:before, .fp-section .sectionsNav#goNext:before, .fp-section .sectionsNav#goTop:before {
   display: block;
   font-size: 0.7em;
 }
-/* line 70, ../scss/modules/fullpage/_section.scss */
+/* line 67, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav#goNext:before {
   content: "Learn More";
 }
-/* line 77, ../scss/modules/fullpage/_section.scss */
+/* line 74, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav#goTop:before {
   content: "Top";
 }
-/* line 83, ../scss/modules/fullpage/_section.scss */
+/* line 80, ../scss/modules/fullpage/_section.scss */
 .fp-section .sectionsNav .fa-chevron-down {
   font-size: 2.8em;
 }
 
-/* line 89, ../scss/modules/fullpage/_section.scss */
+/* line 86, ../scss/modules/fullpage/_section.scss */
 .fullPage-header {
   position: absolute;
   top: 0;

@@ -33,25 +33,22 @@ background: rgba(255,255,255,.3); //- white
         padding: .1em;
         font-family: 'arial', sans-serif;
         position: absolute;
-        bottom: 8%;
+        bottom: 3%;
         left: 48%;
         z-index: 100;
 
         // Tablet
         @media (max-width: 999px){
-            bottom: 3%;
             left: 47%;
         }
 
         // Mobile-Landscape
         @media (max-width: 699px) and (orientation: landscape){
-            bottom: 3%;
             left: 46%;
         }
 
         // Mobile-Portrait
         @media (max-width: 499px) and (orientation: portrait){
-            bottom: 3%;
             left: 43%;
         }
 
