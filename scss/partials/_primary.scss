@@ -58,7 +58,7 @@
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
     background: rgba(0,0,0,0.5) url(../images/title.png);
-    background-attachment: fixed;
+    //background-attachment: fixed;
     
     display: table;
     width: 100%;
@@ -109,3 +109,70 @@
 /*
  * Pages
  */
+
+.menu-nav {
+    padding: 0;
+    font-size: 2em;
+    list-style: none;
+    
+     // Tablet
+    @media screen and (min-width: 1000px){
+        
+        margin-top: 50px;
+        margin-bottom: 0;
+        
+        li {
+            display: inline-block;
+            padding: 0 3%;
+            font-size: 1.3em;
+        }
+    }
+}
+
+
+.iframe-block-lg {
+    
+    img {
+        position: absolute;
+        botom: 0;
+    }
+    
+    iframe {
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 999px){
+        display: none;
+        visibility: hidden;
+    }
+}
+
+#iframe-block-xs {
+    padding: 5px 3px 0 3px;
+    
+    img {
+        position: absolute;
+        botom: -30px;
+    }
+    
+    @media screen and (min-width: 1000px){
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.iframe-block-xs {
+
+    @media screen and (min-width: 1000px){
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+.iframecover {
+    background-color: rgba(255,255,255,0.01);
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}

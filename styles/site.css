@@ -122,7 +122,6 @@ a { //suppressing the -webkit-tap-highlight-color
 /* line 59, ../scss/partials/_primary.scss */
 .site-wrapper {
   background: rgba(0, 0, 0, 0.5) url(../images/title.png);
-  background-attachment: fixed;
   display: table;
   width: 100%;
   height: 100%;
@@ -180,6 +179,76 @@ a { //suppressing the -webkit-tap-highlight-color
 /*
  * Pages
  */
+/* line 113, ../scss/partials/_primary.scss */
+.menu-nav {
+  padding: 0;
+  font-size: 2em;
+  list-style: none;
+}
+@media screen and (min-width: 1000px) {
+  /* line 113, ../scss/partials/_primary.scss */
+  .menu-nav {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  /* line 124, ../scss/partials/_primary.scss */
+  .menu-nav li {
+    display: inline-block;
+    padding: 0 3%;
+    font-size: 1.3em;
+  }
+}
+
+/* line 135, ../scss/partials/_primary.scss */
+.iframe-block-lg img {
+  position: absolute;
+  botom: 0;
+}
+/* line 140, ../scss/partials/_primary.scss */
+.iframe-block-lg iframe {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 999px) {
+  /* line 133, ../scss/partials/_primary.scss */
+  .iframe-block-lg {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* line 150, ../scss/partials/_primary.scss */
+#iframe-block-xs {
+  padding: 5px 3px 0 3px;
+}
+/* line 153, ../scss/partials/_primary.scss */
+#iframe-block-xs img {
+  position: absolute;
+  botom: -30px;
+}
+@media screen and (min-width: 1000px) {
+  /* line 150, ../scss/partials/_primary.scss */
+  #iframe-block-xs {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 164, ../scss/partials/_primary.scss */
+  .iframe-block-xs {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* line 173, ../scss/partials/_primary.scss */
+.iframecover {
+  background-color: rgba(255, 255, 255, 0.01);
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
 /*
  * NavBar
  */
@@ -268,31 +337,45 @@ a { //suppressing the -webkit-tap-highlight-color
  * Video Players
  */
 /* line 7, ../scss/partials/_video-players.scss */
-.yt-player img, .main-player img, .bl-player img {
+.yt-player img, .main-player img, .video-player img {
   margin: 0 auto;
-  width: 100%;
-}
-/* line 12, ../scss/partials/_video-players.scss */
-.yt-player iframe, .main-player iframe, .bl-player iframe {
-  margin: 0 auto;
+  width: 320px;
   height: 300px;
-  width: 645px;
+}
+/* line 13, ../scss/partials/_video-players.scss */
+.yt-player iframe, .main-player iframe, .video-player iframe {
+  margin: 0 auto;
 }
 
-/* line 23, ../scss/partials/_video-players.scss */
+/* line 24, ../scss/partials/_video-players.scss */
 .main-player img {
   background-image: url(../images/SR_logo.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  width: 100%;
+  height: 100%;
+  max-height: 530px;
+}
+/* line 35, ../scss/partials/_video-players.scss */
+.main-player iframe {
+  width: 520px;
+  height: 300px;
 }
 
-/* line 34, ../scss/partials/_video-players.scss */
-.bl-player img {
-  background-image: url(../images/BL_logo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+/* line 44, ../scss/partials/_video-players.scss */
+.video-player img {
+  background-color: rgba(230, 230, 230, 0.5);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+}
+/* line 53, ../scss/partials/_video-players.scss */
+.video-player iframe {
+  width: 520px;
+  height: 300px;
 }
 
 /* line 3, ../scss/partials/_socialbuttons.scss */
